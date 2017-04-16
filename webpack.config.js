@@ -4,6 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BabiliPlugin = require("babili-webpack-plugin")
 const LicenseWebpackPlugin = require('license-webpack-plugin')
+const DotEnv = require('dotenv-webpack')
 
 module.exports = {
   entry: './src/index.js',
@@ -49,6 +50,10 @@ module.exports = {
       pattern: /^(MIT|ISC|BSD.*)$/,
       unacceptablePattern: /GPL/,
       abortOnUnacceptableLicense: true
+    }),
+    new Dotenv({
+      path: './.env', // if not simply .env 
+      safe: true // lets load the .env.example file as well
     })
   ],
   devServer: {
