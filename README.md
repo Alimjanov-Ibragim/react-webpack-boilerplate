@@ -8,11 +8,11 @@ A quick boilerplate for React projects.
 * React
 * SCSS
 * Babel
-** Babili for minification
+    * Babili for minification
 * ESLint
-* License checking
-** allow: MIT, ISC, BSD
-** disallow: GPL
+* License checking prevents build on unwanted licenses
+    * Allow: MIT, ISC, BSD
+    * Disallow: GPL
 * Yarn
 
 ## Get Started
