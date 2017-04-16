@@ -4,6 +4,9 @@
     ],
     "comments": false,
     "env": {
+      "production": {
+        "presets": ["babili", "react"]
+      },
       "test": {
         "presets": ["es2015", "react"]
       }

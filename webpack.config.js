@@ -51,15 +51,16 @@ module.exports = {
       unacceptablePattern: /GPL/,
       abortOnUnacceptableLicense: true
     }),
-    new Dotenv({
-      path: './.env', // if not simply .env 
+    new DotEnv({
+      path: './.env', // if not simply .env
       safe: true // lets load the .env.example file as well
     })
   ],
   devServer: {
     contentBase: path.resolve('dist'),
-    compress: true,
-    port: 8080,
-    https: false
+    host: process.env.DEVSERVER_HOST,
+    compress: process.env.DEVSERVER_COMPRESSION,
+    port: process.env.DEVSERVER_PORT,
+    https: process.env.DEVSERVER_SSL
   }
 }
