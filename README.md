@@ -8,11 +8,11 @@ A quick boilerplate for React projects.
 * React
 * SCSS
 * Babel
+    * Babili for minification
 * ESLint
-* Babili for minification
-* License checking
-  * allow: MIT, ISC, BSD
-  * disallow: GPL
+* License checking prevents build on unwanted licenses
+    * Allow: MIT, ISC, BSD
+    * Disallow: GPL
 * Yarn
 
 ## Get Started
@@ -20,5 +20,5 @@ A quick boilerplate for React projects.
 1. Install Yarn and Node.js
 2. Run `yarn install` for dependencies
 3. Run your scripts
-  * `yarn build` runs the webpack build
-  * `yarn start` to start the dev server, by default at `http://localhost:8080`
+    * `yarn build` runs the webpack build
+    * `yarn start` to start the dev server, by default at `http://localhost:8080`
