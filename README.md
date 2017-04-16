@@ -14,6 +14,7 @@ A quick boilerplate for React projects.
     * Allow: MIT, ISC, BSD
     * Disallow: GPL
 * Yarn
+* Jest for tests
 
 ## Get Started
 
