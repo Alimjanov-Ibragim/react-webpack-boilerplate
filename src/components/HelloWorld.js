@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 
-export default class App extends Component {
+export default class HelloWorld extends Component {
+  plus(a,b) {
+    return a+b;
+  }
+
   render() {
     return (
       <div>
